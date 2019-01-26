@@ -1,0 +1,91 @@
+body{
+	background-color: grey
+}
+h1{	
+	background-color: lightgrey;
+	border: none;
+	color: black;
+	text-align: left;
+	font-style: bold;
+	font-size: 40px
+}	
+p{
+	border: none;
+	border-spacing: 0px
+	border-collapse: collapse;
+	margin: 0px;
+	color: white;	
+}
+.fourteen {
+	background-color: rgba(46,154,254,1)
+}
+.thirteen {
+	background-color: rgba(46,154,254,0.8)
+}
+.twelve {
+	background-color: rgba(46,154,254,0.7)
+}
+.eleven{
+	background-color: rgba(46,154,254,0.5)
+}
+.ten {
+	background-color: rgba(46,154,254,0.4)
+}
+.nine {
+	background-color: rgba(46,154,254,0.3)
+}
+.eight {
+	background-color: rgba(46,154,254,0.2)
+}
+.seven {
+	background-color: rgba(50,245,63)
+}
+.six{
+	background-color: rgba(245,50,128,0.2)
+}
+.five {
+	background-color: rgba(245,50,128,0.3)
+}
+.four {
+	background-color: rgba(245,50,128,0.4)
+}
+.three {
+	background-color: rgba(245,50,128,0.6)
+}
+.two {
+	background-color: rgba(245,50,128,0.8)
+}
+.one {
+	background-color: rgba(245,50,128,0.9)
+}
+.zero {
+	background-color: rgba(245,50,128,1)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
