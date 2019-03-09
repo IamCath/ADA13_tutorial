@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AJAX_Get</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<!--if download or use the link method -->
+
+	<style>
+		table {
+			border-collapse: collapse;
+		}
+		table td,th {
+			border:1px;solid;
+			padding:4px;
+		}
+	</style>
+	
+</head>
+<body>
+		<table id= "user">
+		<tr>
+			<th> Date </th>
+			<th> Minimum Temperature </th>
+			<th> Maximum Temperature </th>
+			<th> Weather </th>
+		</tr>
+	</table>
+
+
+	<script>
+		$(document).ready(function() {
+			$.ajax({url:"https://api.openweathermap.org/data/2.5/forecast/daily?lat=35&lon=139&cnt=10&appid=9fd7a449d055dba26a982a3220f32aa2",
+				success: function(result) {
+					console.log(result)
+				for (var i = 0; i<result.list.length; i++) {
+					var line = "<tr><td>" + result.list[i].dt +"</td><td>" + result.list[i].temp.min + "</td><td>" + result.list[i].temp.max +"</td><td>" + result.list[i].weather[0].main + "</td></tr>";
+					$("table#user").append(line);
+				}
+			}
+		});
+		});
+	
+	</script>
+
+
+</body>
+</html>
